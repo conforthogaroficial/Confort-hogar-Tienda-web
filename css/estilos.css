@@ -1,0 +1,863 @@
+/* CONFORT HOGAR - ESTILOS PRINCIPALES */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+
+:root{
+
+    --fondo:#f8f1e7;
+    --blanco:#ffffff;
+    --beige:#ead7bd;
+    --madera:#8b5e3c;
+    --madera-oscura:#5b3a29;
+    --texto:#3d3027;
+    --sombra:0 10px 30px rgba(0,0,0,0.10);
+
+}
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--fondo);
+    color:var(--texto);
+
+}
+
+
+h1,h2{
+
+    font-family:'Playfair Display',serif;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+.contenedor{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+
+
+/* PANTALLA DE INGRESO */
+
+.pantalla-edad{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(91,58,41,.85),
+    rgba(91,58,41,.85)
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+
+.caja-edad{
+
+    background:white;
+    width:90%;
+    max-width:420px;
+
+    padding:40px 25px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:var(--sombra);
+
+}
+
+
+.caja-edad h1{
+
+    font-size:42px;
+    color:var(--madera);
+
+}
+
+
+.caja-edad h2{
+
+    margin:20px 0 10px;
+
+}
+
+
+.verificado{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    background:#efe2d1;
+
+    color:var(--madera-oscura);
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+
+
+.caja-edad button{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--madera);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+.caja-edad .boton-no{
+
+    background:#777;
+
+}
+
+/* BARRA SUPERIOR */
+
+.barra-superior{
+
+    background:var(--madera-oscura);
+
+    color:white;
+
+    text-align:center;
+
+    padding:12px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+
+
+
+
+/* HEADER Y MENU */
+
+
+header{
+
+    background:rgba(255,255,255,.95);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+
+
+.logo{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:var(--madera);
+
+}
+
+
+
+.logo span{
+
+    color:#b8895b;
+
+}
+
+
+
+.menu{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+
+.menu a{
+
+    color:var(--texto);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.menu a:hover{
+
+    color:var(--madera);
+
+}
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+    min-height:520px;
+
+    display:flex;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+    rgba(248,241,231,.85),
+    rgba(248,241,231,.85)
+    );
+
+}
+
+
+
+.hero h1{
+
+    font-size:48px;
+
+    color:var(--madera-oscura);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    font-size:18px;
+
+}
+
+
+
+.boton-principal{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    background:var(--madera);
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+.boton-principal:hover{
+
+    transform:translateY(-3px);
+
+    opacity:.9;
+
+}
+
+
+
+
+
+/* SECCIONES */
+
+
+.seccion{
+
+    padding:70px 0;
+
+}
+
+
+
+.seccion h2{
+
+    text-align:center;
+
+    font-size:38px;
+
+    color:var(--madera-oscura);
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+/* CATEGORIAS */
+
+
+.grid-categorias{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.tarjeta{
+
+    background:white;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    border-radius:var(--radio);
+
+    box-shadow:var(--sombra);
+
+    transition:.3s;
+
+}
+
+
+
+.tarjeta:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.icono{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+/* PRODUCTOS */
+
+.productos{
+
+    background:#fffaf3;
+
+}
+
+
+.grid-productos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.producto{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    padding-bottom:25px;
+
+    box-shadow:var(--sombra);
+
+    transition:.3s;
+
+}
+
+
+
+.producto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.imagen-producto{
+
+    height:220px;
+
+    background:#eee;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+.imagen-producto img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+.producto h3{
+
+    margin:20px 20px 10px;
+
+    font-size:22px;
+
+}
+
+
+
+.producto p{
+
+    margin:0 20px;
+
+    color:#777;
+
+}
+
+
+
+.precio{
+
+    display:block;
+
+    margin:15px 20px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:var(--madera);
+
+}
+
+
+
+.producto button{
+
+    width:calc(100% - 40px);
+
+    margin:0 20px;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--madera);
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* CARRITO */
+
+.carrito{
+
+    position:fixed;
+
+    right:20px;
+
+    top:120px;
+
+    width:280px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:var(--sombra);
+
+    display:none;
+
+}
+
+
+
+
+
+/* CONTACTO */
+
+.contacto{
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* WHATSAPP */
+
+.whatsapp{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:40px;
+
+    font-weight:700;
+
+    box-shadow:var(--sombra);
+
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+
+    background:var(--madera-oscura);
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+}
+
+
+
+footer h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:30px;
+
+}
+
+
+
+
+
+/* CELULARES */
+
+
+@media(max-width:768px){
+
+
+    .nav{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+
+    .menu{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+
+
+    .logo{
+
+        font-size:32px;
+
+    }
+
+
+
+    .hero h1{
+
+        font-size:36px;
+
+    }
+
+
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+
+
+    .seccion h2{
+
+        font-size:32px;
+
+    }
+
+
+    .carrito{
+
+        width:90%;
+
+        right:5%;
+
+    }
+
+
+}
+/* ANIMACIONES */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+.hero,
+.tarjeta,
+.producto{
+
+    animation:aparecer .7s ease;
+
+}
+
+
+
+
+
+/* DETALLES DE CONFIANZA */
+
+.sello-oficial{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#f1dfc8;
+
+    color:var(--madera-oscura);
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* BOTONES GENERALES */
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+
+button:hover{
+
+    opacity:.9;
+
+}
+
+
+
+
+
+/* MEJORAS PARA PANTALLAS PEQUEÑAS */
+
+@media(max-width:480px){
+
+
+    .caja-edad h1{
+
+        font-size:34px;
+
+    }
+
+
+    .caja-edad{
+
+        padding:30px 20px;
+
+    }
+
+
+    .hero{
+
+        min-height:420px;
+
+        padding:30px 0;
+
+    }
+
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+
+    .barra-superior{
+
+        font-size:12px;
+
+        padding:10px;
+
+    }
+
+
+  }
