@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Confort Hogar | Tienda Web Oficial</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#f8f1e7;
+    color:#4a3525;
+}
+
+
+/* Aviso superior */
+
+.aviso{
+    background:#5b3a29;
+    color:white;
+    text-align:center;
+    padding:12px;
+    font-size:14px;
+}
+
+
+/* Encabezado */
+
+header{
+    background:#fffaf3;
+    padding:25px 20px;
+    text-align:center;
+}
+
+.logo{
+    font-family:'Playfair Display', serif;
+    font-size:42px;
+    color:#6b4226;
+    margin:0;
+}
+
+.subtitulo{
+    color:#8b6a4a;
+}
+
+
+/* Menu */
+
+nav{
+    background:#ead7bd;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:#5b3a29;
+    margin:0 12px;
+    font-weight:600;
+}
+
+
+/* Hero */
+
+.hero{
+    min-height:450px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+
+    background:
+    linear-gradient(
+    rgba(255,250,243,.85),
+    rgba(255,250,243,.85)
+    );
+}
+
+
+.hero h2{
+    font-family:'Playfair Display', serif;
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+
+.hero p{
+    font-size:18px;
+    max-width:600px;
+}
+
+
+.boton{
+    margin-top:25px;
+    background:#8b5e3c;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+
+/* Categorias */
+
+.titulo{
+    text-align:center;
+    font-size:30px;
+    font-family:'Playfair Display', serif;
+}
+
+
+.categorias{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:30px;
+
+}
+
+
+.card{
+
+    background:white;
+    width:220px;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+
+.icono{
+    font-size:45px;
+}
+
+
+
+/* Confianza */
+
+.confianza{
+
+background:#fffaf3;
+padding:40px;
+text-align:center;
+
+}
+
+
+.confianza h3{
+
+font-size:28px;
+
+}
+
+
+/* WhatsApp */
+
+.whatsapp{
+
+position:fixed;
+right:20px;
+bottom:20px;
+
+background:#25D366;
+color:white;
+
+padding:15px 20px;
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+/* Footer */
+
+footer{
+
+background:#5b3a29;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="aviso">
+📢 Exclusivamente para compras con envío. Los pedidos se abonan en su totalidad antes del despacho.
+</div>
+
+
+
+<header>
+
+<h1 class="logo">
+Confort Hogar
+</h1>
+
+<p class="subtitulo">
+Tienda Web Oficial
+</p>
+
+</header>
+
+
+
+<nav>
+
+<a href="#">Inicio</a>
+<a href="#">Productos</a>
+<a href="#">Contacto</a>
+
+</nav>
+
+
+
+
+<section class="hero">
+
+<h2>
+Tu hogar, más cómodo y hermoso
+</h2>
+
+
+<p>
+Encontrá muebles, decoración y productos seleccionados para transformar tus espacios.
+</p>
+
+
+<a class="boton" href="#">
+Ver productos
+</a>
+
+
+</section>
+
+
+
+
+
+<h2 class="titulo">
+Categorías
+</h2>
+
+
+
+<section class="categorias">
+
+
+<div class="card">
+
+<div class="icono">
+🛋️
+</div>
+
+<h3>
+Muebles
+</h3>
+
+<p>
+Diseño y comodidad para tu hogar.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="icono">
+🔌
+</div>
+
+<h3>
+Electrodomésticos
+</h3>
+
+<p>
+Calidad para tu día a día.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="icono">
+🖼️
+</div>
+
+<h3>
+Decoración
+</h3>
+
+<p>
+Detalles que hacen la diferencia.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="icono">
+🧉
+</div>
+
+<h3>
+Mates
+</h3>
+
+<p>
+Productos seleccionados.
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+<section class="confianza">
+
+<h3>
+¿Por qué elegir Confort Hogar?
+</h3>
+
+<p>
+Productos seleccionados, atención personalizada y una experiencia de compra simple y segura.
+</p>
+
+</section>
+
+
+
+
+
+<a class="whatsapp" href="#">
+WhatsApp
+</a>
+
+
+
+
+<footer>
+
+© 2026 Confort Hogar - Tienda Web Oficial
+
+</footer>
+
+
+
+</body>
+
+</html>
